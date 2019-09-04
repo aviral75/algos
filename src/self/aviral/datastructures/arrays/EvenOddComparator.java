@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
- * The class shows an example of using Compartor with compare method
+ * The class shows an example of using Comparator with compare method
  * vs java lambda usage to do same thing .
  * Also List.of return immutable list of cannot be sorted or modified.
  */
