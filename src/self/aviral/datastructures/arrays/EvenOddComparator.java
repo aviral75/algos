@@ -26,7 +26,7 @@ public class EvenOddComparator {
 	};
 
 
-
+//should we separate the implementations
 	public static void main(String[] args) {
 		// with arrays and comparator
 		Integer []nums = new Integer[] {6,1,3,7,5,4};
