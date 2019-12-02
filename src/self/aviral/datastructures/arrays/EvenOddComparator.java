@@ -35,14 +35,16 @@ public class EvenOddComparator {
 		// with list and lamda
 		List<Integer> numList =Arrays.asList(6,1,2,3,7,5,4);
 		numList.sort((a,b)->{if((a&1)==0 && (b&1)!=0) return -1; if ((b&1)==0 && (a&1)!=0) return 1; return a-b;} );
-		numList.stream().forEach(System.out::println);
+		numList.stream().forEach(System.out::print);
 
+		System.out.println();
+		
 		// with stream and lambda
          Stream.of(6,1,2,3,7,5,4)
         	.sorted((a,b)->{if((a&1)==0 && (b&1)!=0) return -1; if ((b&1)==0 && (a&1)!=0) return 1; return a-b;} )
             .collect(Collectors.collectingAndThen(Collectors.toList(), 
                         Collections::unmodifiableList))
-            .forEach(System.out::println);
+            .forEach(System.out::print);
 
 	}
 }
